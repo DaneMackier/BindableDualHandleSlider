@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindableRangeSlider.Droid",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindableRangeSlider.iOS", "iOS\BindableRangeSlider.iOS.csproj", "{B75EA245-E4C1-4F26-8FD8-C8BC985AF0F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdkStudio.Xamarin.Components.DualHandleSlider.Droid", "MdkStudio.Xamarin.Components.DualHandleSlider\MdkStudio.Xamarin.Components.DualHandleSlider.Droid.csproj", "{CBEC9AB6-B03C-4879-BAD8-4944389A748B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,17 @@ Global
 		{B75EA245-E4C1-4F26-8FD8-C8BC985AF0F4}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{B75EA245-E4C1-4F26-8FD8-C8BC985AF0F4}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{B75EA245-E4C1-4F26-8FD8-C8BC985AF0F4}.Debug|iPhone.Build.0 = Debug|iPhone
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Release|iPhone.Build.0 = Release|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal

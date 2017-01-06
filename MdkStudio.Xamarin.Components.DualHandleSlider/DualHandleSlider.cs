@@ -4,7 +4,7 @@ using Android.Graphics;
 using Android.Util;
 using Android.Views;
 
-namespace mdkstudio.components.dualhandleslider
+namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
 {
 	public class DualHandleSlider : View
 	{

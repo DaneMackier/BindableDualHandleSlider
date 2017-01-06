@@ -2,7 +2,7 @@ using System;
 using Android.Content;
 using Android.Util;
 
-namespace mdkstudio.components.dualhandleslider
+namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
 {
   public class DualHandleSliderAttributeParser
   {

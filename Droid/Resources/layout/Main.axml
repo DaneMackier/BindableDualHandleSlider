@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <mdkstudio.components.dualhandleslider.BindableDualHandleSlider
+    <MdkStudio.Xamarin.Components.DualHandleSlider.Droid.BindableDualHandleSlider
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_centerInParent="true"

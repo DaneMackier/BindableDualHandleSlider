@@ -5,7 +5,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 
-namespace mdkstudio.components.dualhandleslider
+namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
 {
   public class BindableDualHandleSlider : RelativeLayout
   {
@@ -149,8 +149,8 @@ namespace mdkstudio.components.dualhandleslider
       _titleText.Id = View.GenerateViewId();
 
       var titleLayoutParams = new RelativeLayout.LayoutParams(LayoutParams.WrapContent, LayoutParams.WrapContent);
-      titleLayoutParams.LeftMargin = 200;
-      this.AddView(_titleText, titleLayoutParams);
+      //titleLayoutParams.LeftMargin = 200; // TODO: Set title left margin to make more customizable
+      AddView(_titleText, titleLayoutParams);
     }
 
     private void InitializeDualHandleSlider(Context context)
