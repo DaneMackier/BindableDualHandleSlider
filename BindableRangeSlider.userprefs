@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{3DCAA337-EEE1-419B-A5EB-4E9C461923B7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/BindableDualHandleSlider.cs">
+    <Files>
+      <File FileName="Droid/BindableDualHandleSlider.cs" Line="129" Column="67" />
+      <File FileName="Droid/DualHandleSliderAttributeParser.cs" Line="17" Column="29" />
+      <File FileName="Droid/DualHandleSlider.cs" Line="145" Column="118" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BindableRangeSlider.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0A6E88C6-7C9E-42BB-8340-69D6837796D0" />
+  <MonoDevelop.Ide.ItemProperties.BindableRangeSlider.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.4_7_WXGA_API_23" />
+</Properties>
