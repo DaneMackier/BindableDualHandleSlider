@@ -66,7 +66,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       {
         return result;
       }
-          
+
       throw new ArgumentException(string.Format("Wrong {0} value '{1}'. Must be a true or false", attributeName, attributeValue));
     }
 

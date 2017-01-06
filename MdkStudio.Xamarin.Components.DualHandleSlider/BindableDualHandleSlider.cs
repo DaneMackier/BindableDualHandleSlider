@@ -128,36 +128,35 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
     {
       _attributeParser = new DualHandleSliderAttributeParser(attrs);
 
-      Initialize(context, attrs);
+      Initialize(context);
     }
 
-    private void Initialize(Context context, IAttributeSet attrs)
+    private void Initialize(Context context)
     {
-      InitializeTitleView(context, attrs);
+      InitializeTitleView(context);
       InitializeDualHandleSlider(context);
       InitializeValuesViews(context);
       InitializeDefaultValues();
     }
 
-    private void InitializeTitleView(Context context, IAttributeSet attrs)
+    private void InitializeTitleView(Context context)
     {
-      var titleColor = Android.Graphics.Color.AliceBlue;
+      var titleColor = Color.AliceBlue;
       _titleText = new TextView(context);
       _titleText.SetTextColor(titleColor);
       _titleText.SetTextSize(ComplexUnitType.Sp, 18);
       _titleText.SetTypeface(_titleText.Typeface, Typeface.Default.Style);
-      _titleText.Id = View.GenerateViewId();
+      _titleText.Id = GenerateViewId();
 
-      var titleLayoutParams = new RelativeLayout.LayoutParams(LayoutParams.WrapContent, LayoutParams.WrapContent);
+      var titleLayoutParams = new LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent);
       //titleLayoutParams.LeftMargin = 200; // TODO: Set title left margin to make more customizable
       AddView(_titleText, titleLayoutParams);
     }
 
     private void InitializeDualHandleSlider(Context context)
     {
-      var rangeLayoutParams = new RelativeLayout.LayoutParams(LayoutParams.MatchParent, LayoutParams.WrapContent);
-      rangeLayoutParams.Width = LayoutParams.MatchParent;
-      //rangeLayoutParams.Height = 150;
+      var rangeLayoutParams = new LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
+      rangeLayoutParams.Width = ViewGroup.LayoutParams.MatchParent;
       rangeLayoutParams.AddRule(LayoutRules.Below, _titleText.Id);
 
       _dualRangeSlider = new DualHandleSlider(context,
@@ -168,7 +167,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
                                               _attributeParser.RightValue,
                                               _attributeParser.Title);
       
-      _dualRangeSlider.Id = View.GenerateViewId();
+      _dualRangeSlider.Id = GenerateViewId();
       _dualRangeSlider.LeftValueChanged += OnLeftValueChanged;
       _dualRangeSlider.RightValueChanged += OnRightValueChanged;
 
@@ -177,7 +176,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
 
     private void InitializeValuesViews(Context context)
     {
-      var labelColor = Android.Graphics.Color.White;
+      var labelColor = Color.White;
       _leftTextView = new TextView(context);
       _leftTextView.SetTypeface(_leftTextView.Typeface, Typeface.DefaultBold.Style);
       _leftTextView.SetTextColor(labelColor);
@@ -187,13 +186,13 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       _rightTextView.SetTypeface(_rightTextView.Typeface, Typeface.DefaultBold.Style);
       _rightTextView.SetTextColor(labelColor);
 
-      var leftLayoutParams = new RelativeLayout.LayoutParams(
+      var leftLayoutParams = new LayoutParams(
         ViewGroup.LayoutParams.WrapContent, 
         ViewGroup.LayoutParams.WrapContent);
       leftLayoutParams.AddRule(LayoutRules.AlignParentLeft);
       leftLayoutParams.AddRule(LayoutRules.Below, _dualRangeSlider.Id);
 
-      var rightLayoutParams = new RelativeLayout.LayoutParams(
+      var rightLayoutParams = new LayoutParams(
         ViewGroup.LayoutParams.WrapContent,
         ViewGroup.LayoutParams.WrapContent);
       rightLayoutParams.AddRule(LayoutRules.AlignParentRight);
