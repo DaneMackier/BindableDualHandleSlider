@@ -30,6 +30,9 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
     private float sliderWidthWithoutPadding;
     private float sliderMiddle;
 
+    public int HandleDrawableId { get; set; }
+    private bool _handleHasDrawableId { get { return HandleDrawableId != -1; } }
+
     private RectF rect;
 
     private Paint paint;
@@ -142,7 +145,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
 
     public DualHandleSlider(Context context, IAttributeSet attributes) : base(context, attributes)
     {
-      DualHandleSliderAttributeParser customRangeSliderAttributesParser = new DualHandleSliderAttributeParser(attributes);
+      DualHandleSliderAttributeParser customRangeSliderAttributesParser = new DualHandleSliderAttributeParser(attributes, context);
 
       Initialize(
       customRangeSliderAttributesParser.MinValue,
@@ -172,6 +175,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
     float rightValue,
     string title)
     {
+      HandleDrawableId = -1;
       InitDpiDependentParams();
 
       rect = new RectF();
@@ -372,14 +376,14 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       paint.Color = (ActiveProgressColor);
       canvas.DrawRect(rect, paint);
 
-      // draw circles
-      DrawSlider(canvas, _leftPointX, sliderMiddle,
+      // draw handles
+      DrawHandles(canvas, _leftPointX, sliderMiddle,
       draggingSlider.HasValue && draggingSlider.Value == SliderType.LeftSlider);
-      DrawSlider(canvas, _rightPointX, sliderMiddle,
+      DrawHandles(canvas, _rightPointX, sliderMiddle,
       draggingSlider.HasValue && draggingSlider.Value == SliderType.RightSlider);
     }
 
-    private void DrawSlider(Canvas canvas, float x, float y, bool pressed)
+    private void DrawHandles(Canvas canvas, float x, float y, bool pressed)
     {
       //      if (pressed)
       //      {
@@ -398,8 +402,17 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       //      paint.Color = (sliderInnerColor);
       //      canvas.DrawCircle(x, y, sliderInnerRadius, paint);
 
-      paint.Color = (SliderOuterColor);
-      canvas.DrawCircle(x, y, sliderOuterRadius, paint);
+      if (!_handleHasDrawableId)
+      {
+        paint.Color = SliderOuterColor;
+        canvas.DrawCircle(x, y, sliderOuterRadius, paint);
+      }
+      else
+      {
+        Bitmap bitmap = BitmapFactory.DecodeResource(Resources, HandleDrawableId);
+        paint.Color = Color.White;
+        canvas.DrawBitmap(bitmap, x - (bitmap.Width/2), y - (bitmap.Height/2), paint);
+      }
     }
 
     #endregion

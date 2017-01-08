@@ -1,12 +1,13 @@
-﻿<Properties StartupConfiguration="{3DCAA337-EEE1-419B-A5EB-4E9C461923B7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs">
+﻿<Properties StartupConfiguration="{CBEC9AB6-B03C-4879-BAD8-4944389A748B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSliderAttributeParser.cs">
     <Files>
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/MainActivity.cs" Line="11" Column="16" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSlider.cs" Line="395" Column="29" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSliderAttributeParser.cs" Line="13" Column="38" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs" Line="159" Column="45" />
+      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSlider.cs" Line="407" Column="40" />
+      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs" Line="177" Column="5" />
+      <File FileName="Droid/MainActivity.cs" Line="17" Column="1" />
+      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSliderAttributeParser.cs" Line="16" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MdkStudio.Xamarin.Components.DualHandleSlider.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.4_7_WXGA_API_23" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

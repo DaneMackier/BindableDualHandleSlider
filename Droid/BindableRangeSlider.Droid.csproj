@@ -44,6 +44,7 @@
     <Reference Include="Mono.Android" />
     <Reference Include="MdkStudio.Xamarin.Components.DualHandleSlider">
       <HintPath>..\MdkStudio.Xamarin.Components.DualHandleSlider\obj\Debug\MdkStudio.Xamarin.Components.DualHandleSlider.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>

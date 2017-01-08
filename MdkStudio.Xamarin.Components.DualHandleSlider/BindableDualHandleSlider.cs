@@ -126,7 +126,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
     public BindableDualHandleSlider(Context context, IAttributeSet attrs) :
       base(context, attrs)
     {
-      _attributeParser = new DualHandleSliderAttributeParser(attrs);
+      _attributeParser = new DualHandleSliderAttributeParser(attrs, context);
 
       Initialize(context);
     }
@@ -167,6 +167,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
                                               _attributeParser.RightValue,
                                               _attributeParser.Title);
       
+      _dualRangeSlider.HandleDrawableId = _attributeParser.HandleDrawable;
       _dualRangeSlider.Id = GenerateViewId();
       _dualRangeSlider.LeftValueChanged += OnLeftValueChanged;
       _dualRangeSlider.RightValueChanged += OnRightValueChanged;
