@@ -14,6 +14,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
     public readonly string Title;
     public readonly bool HideValues;
     public readonly int HandleDrawable;
+    public readonly int TitleLeftMargin;
 
     private Context _cachedContext;
 
@@ -29,6 +30,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       Title = GetString(attributes, "title");
       HideValues = GetBool(attributes, "hide_values");
       HandleDrawable = GetDrawableId(attributes, "handle_drawable");
+      TitleLeftMargin = GetPixelValue(attributes, "title_marginLeft");
     }
 
     private float ParseFloat(IAttributeSet attributes, string attributeName, float defaultNumber)
@@ -76,11 +78,37 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       throw new ArgumentException(string.Format("Wrong {0} value '{1}'. Must be a true or false", attributeName, attributeValue));
     }
 
-    //public int DpToPixel(int dp)
-    //{
-    //  DisplayMetrics displayMetrics = _context.Resources.DisplayMetrics;
-    //  return (int)Math.Ceiling(dp *  displayMetrics.Density);
-    //}
+    private int GetPixelValue(IAttributeSet attributes, string attributeName)
+    {
+      string attributeValue = attributes.GetAttributeValue(null, attributeName);
+
+      if (string.IsNullOrEmpty(attributeValue))
+      {
+        return 0;
+      }
+
+      if (attributeValue.Contains("dp"))
+      {
+        string[] delimiters = { "dp" };
+        var splitValues = attributeValue.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+        if (splitValues.Length != 1)
+        {
+          throw new ArgumentException(string.Format("Wrong parameter for {0}, value must have number followed by dp", attributeName));
+        }
+
+        attributeValue = splitValues[0];
+      }
+
+      var pixelValue = DpToPixel(int.Parse(attributeValue));
+      return pixelValue;
+    }
+
+    private int DpToPixel(int dp)
+    {
+      DisplayMetrics displayMetrics = _cachedContext.Resources.DisplayMetrics;
+     
+      return (int)Math.Round(dp * (displayMetrics.Xdpi / (float)DisplayMetrics.DensityDefault));
+    }
 
     private int GetDrawableId(IAttributeSet attributes, string attributeName)
     {

@@ -149,7 +149,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       _titleText.Id = GenerateViewId();
 
       var titleLayoutParams = new LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent);
-      //titleLayoutParams.LeftMargin = 200; // TODO: Set title left margin to make more customizable
+      titleLayoutParams.LeftMargin = _attributeParser.TitleLeftMargin;
       AddView(_titleText, titleLayoutParams);
     }
 
