@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindableRangeSlider.iOS", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdkStudio.Xamarin.Components.DualHandleSlider.Droid", "MdkStudio.Xamarin.Components.DualHandleSlider\MdkStudio.Xamarin.Components.DualHandleSlider.Droid.csproj", "{CBEC9AB6-B03C-4879-BAD8-4944389A748B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdkStudio.Xamarin.Components.DualHandleSlider.iOS", "MdkStudio.Xamarin.Components.DualHandleSlider.iOS\MdkStudio.Xamarin.Components.DualHandleSlider.iOS.csproj", "{26F2C94B-1B59-491E-BE92-9819E9775A3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,5 +69,17 @@ Global
 		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Release|Any CPU.Build.0 = Release|iPhone
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Release|iPhone.ActiveCfg = Release|iPhone
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Release|iPhone.Build.0 = Release|iPhone
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{26F2C94B-1B59-491E-BE92-9819E9775A3F}.Debug|iPhone.Build.0 = Debug|iPhone
 	EndGlobalSection
 EndGlobal
