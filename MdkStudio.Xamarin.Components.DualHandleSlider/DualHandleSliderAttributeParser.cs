@@ -14,7 +14,14 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
     public readonly string Title;
     public readonly bool HideValues;
     public readonly int HandleDrawable;
-    public readonly int TitleLeftMargin;
+
+    public readonly int TitleMarginLeft;
+    public readonly int TitleMarginBottom;
+    public readonly int LeftValueMarginLeft;
+    public readonly int LeftValueMarginTop;
+    public readonly int RightValueMarginRight;
+    public readonly int RightValueMarginTop;
+    public readonly int ValuesTopMargin;
 
     private Context _cachedContext;
 
@@ -30,7 +37,12 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       Title = GetString(attributes, "title");
       HideValues = GetBool(attributes, "hide_values");
       HandleDrawable = GetDrawableId(attributes, "handle_drawable");
-      TitleLeftMargin = GetPixelValue(attributes, "title_marginLeft");
+
+      TitleMarginLeft = GetPixelValue(attributes, "title_marginLeft");
+      TitleMarginBottom = GetPixelValue(attributes, "title_marginBottom");
+      LeftValueMarginLeft = GetPixelValue(attributes, "leftValue_marginLeft");
+      RightValueMarginRight = GetPixelValue(attributes, "rightValue_marginRight");
+      ValuesTopMargin = GetPixelValue(attributes, "values_marginTop");
     }
 
     private float ParseFloat(IAttributeSet attributes, string attributeName, float defaultNumber)

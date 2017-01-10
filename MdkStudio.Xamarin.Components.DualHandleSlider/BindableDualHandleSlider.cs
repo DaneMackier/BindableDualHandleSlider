@@ -120,6 +120,11 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       {
         _title = value;
         _titleText.Text = _title;
+
+        if (TitleValueChanged != null)
+        {
+          TitleValueChanged(this, EventArgs.Empty);
+        }
       }
     }
 
@@ -149,7 +154,10 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       _titleText.Id = GenerateViewId();
 
       var titleLayoutParams = new LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent);
-      titleLayoutParams.LeftMargin = _attributeParser.TitleLeftMargin;
+
+      titleLayoutParams.LeftMargin = _attributeParser.TitleMarginLeft;
+      titleLayoutParams.BottomMargin = _attributeParser.TitleMarginBottom;
+
       AddView(_titleText, titleLayoutParams);
     }
 
@@ -192,12 +200,16 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
         ViewGroup.LayoutParams.WrapContent);
       leftLayoutParams.AddRule(LayoutRules.AlignParentLeft);
       leftLayoutParams.AddRule(LayoutRules.Below, _dualRangeSlider.Id);
+      leftLayoutParams.LeftMargin = _attributeParser.LeftValueMarginLeft;
+      //leftLayoutParams.TopMargin = _attributeParser.ValuesTopMargin;
 
       var rightLayoutParams = new LayoutParams(
         ViewGroup.LayoutParams.WrapContent,
         ViewGroup.LayoutParams.WrapContent);
       rightLayoutParams.AddRule(LayoutRules.AlignParentRight);
       rightLayoutParams.AddRule(LayoutRules.Below, _dualRangeSlider.Id);
+      rightLayoutParams.RightMargin = _attributeParser.RightValueMarginRight;
+      //rightLayoutParams.TopMargin = _attributeParser.ValuesTopMargin;
 
       AddView(_leftTextView, leftLayoutParams);
       AddView(_rightTextView, rightLayoutParams);

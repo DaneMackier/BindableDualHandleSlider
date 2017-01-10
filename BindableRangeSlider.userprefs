@@ -1,20 +1,13 @@
 ﻿<Properties StartupConfiguration="{CBEC9AB6-B03C-4879-BAD8-4944389A748B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MdkStudio.Xamarin.Components.DualHandleSlider/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs">
     <Files>
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSlider.cs" Line="404" Column="31" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs" Line="151" Column="44" />
-      <File FileName="Droid/MainActivity.cs" Line="17" Column="1" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSliderAttributeParser.cs" Line="29" Column="62" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/Resources/layout/Main.axml" Line="11" Column="25" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/MainActivity.cs" Line="16" Column="1" />
+      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs" Line="206" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MdkStudio.Xamarin.Components.DualHandleSlider.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.4_7_WXGA_API_23" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/danemackier/MyFiles/Work/Xamarin/Components/BindableRangeSlider/src/BindableDualHandleSlider/MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSliderAttributeParser.cs" line="103" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.BindableRangeSlider.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0A6E88C6-7C9E-42BB-8340-69D6837796D0" />
