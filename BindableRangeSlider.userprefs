@@ -1,18 +1,18 @@
-﻿<Properties StartupConfiguration="{26F2C94B-1B59-491E-BE92-9819E9775A3F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSlider.cs">
+﻿<Properties StartupConfiguration="{CBEC9AB6-B03C-4879-BAD8-4944389A748B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs">
     <Files>
       <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider.iOS/BindableRangeSlider.cs" Line="68" Column="10" />
       <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider.iOS/CustomRangeSlider.cs" Line="340" Column="1" />
       <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider.iOS/ActiveRangeSlider.cs" Line="7" Column="11" />
       <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider.iOS/SliderHandleControl.cs" Line="17" Column="16" />
       <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider.iOS/IosExtensions.cs" Line="2" Column="60" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs" Line="170" Column="42" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSlider.cs" Line="150" Column="32" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSliderAttributeParser.cs" Line="16" Column="39" />
+      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs" Line="166" Column="31" />
+      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSlider.cs" Line="151" Column="7" />
+      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSliderAttributeParser.cs" Line="45" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MdkStudio.Xamarin.Components.DualHandleSlider.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.4_7_WXGA_API_23" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

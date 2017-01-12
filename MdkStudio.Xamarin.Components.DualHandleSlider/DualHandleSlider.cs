@@ -153,8 +153,8 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
       customRangeSliderAttributesParser.MinValue,
       customRangeSliderAttributesParser.MaxValue,
       customRangeSliderAttributesParser.Step,
-      customRangeSliderAttributesParser.LeftValue,
-      customRangeSliderAttributesParser.RightValue);
+      customRangeSliderAttributesParser.MinValue,
+      customRangeSliderAttributesParser.MaxValue);
     }
 
     public DualHandleSlider(Context context,

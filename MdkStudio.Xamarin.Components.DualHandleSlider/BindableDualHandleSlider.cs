@@ -172,8 +172,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
                                               _attributeParser.MinValue,
                                               _attributeParser.Step,
                                               _attributeParser.LeftValue,
-                                              _attributeParser.RightValue,
-                                              _attributeParser.Title);
+                                              _attributeParser.RightValue);
       
       _dualRangeSlider.HandleDrawableId = _attributeParser.HandleDrawable;
       _dualRangeSlider.Id = GenerateViewId();
