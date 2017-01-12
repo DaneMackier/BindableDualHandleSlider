@@ -3,16 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdkStudio.Xamarin.Components.DualHandleSlider.Droid", "MdkStudio.Xamarin.Components.DualHandleSlider\MdkStudio.Xamarin.Components.DualHandleSlider.Droid.csproj", "{CBEC9AB6-B03C-4879-BAD8-4944389A748B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdkStudio.Xamarin.Components.DualHandleSlider.iOS", "MdkStudio.Xamarin.Components.DualHandleSlider.iOS\MdkStudio.Xamarin.Components.DualHandleSlider.iOS.csproj", "{26F2C94B-1B59-491E-BE92-9819E9775A3F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-		Debug|iPhoneSimulator = Debug|iPhoneSimulator
-		Release|iPhone = Release|iPhone
-		Release|iPhoneSimulator = Release|iPhoneSimulator
-		Debug|iPhone = Debug|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CBEC9AB6-B03C-4879-BAD8-4944389A748B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
