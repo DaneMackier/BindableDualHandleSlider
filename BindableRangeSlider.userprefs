@@ -1,20 +1,20 @@
 ﻿<Properties StartupConfiguration="{CBEC9AB6-B03C-4879-BAD8-4944389A748B}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs">
     <Files>
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider.iOS/BindableRangeSlider.cs" Line="68" Column="10" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider.iOS/CustomRangeSlider.cs" Line="340" Column="1" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider.iOS/ActiveRangeSlider.cs" Line="7" Column="11" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider.iOS/SliderHandleControl.cs" Line="17" Column="16" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider.iOS/IosExtensions.cs" Line="2" Column="60" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs" Line="166" Column="31" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSlider.cs" Line="151" Column="7" />
-      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSliderAttributeParser.cs" Line="45" Column="7" />
+      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/DualHandleSlider.cs" Line="336" Column="20" />
+      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/Resources/layout/Main.axml" Line="17" Column="17" />
+      <File FileName="MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs" Line="238" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MdkStudio.Xamarin.Components.DualHandleSlider.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.4_7_WXGA_API_23" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/danemackier/MyFiles/Work/Xamarin/Components/BindableRangeSlider/src/BindableDualHandleSlider/MdkStudio.Xamarin.Components.DualHandleSlider.iOS/BindableRangeSlider.cs" line="220" column="1" />
+      <Breakpoint file="/Users/danemackier/MyFiles/Work/Xamarin/Components/BindableRangeSlider/src/BindableDualHandleSlider/MdkStudio.Xamarin.Components.DualHandleSlider.iOS/BindableRangeSlider.cs" line="225" column="1" />
+      <Breakpoint file="/Users/danemackier/MyFiles/Work/Xamarin/Components/BindableRangeSlider/src/BindableDualHandleSlider/MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs" line="233" column="1" />
+      <Breakpoint file="/Users/danemackier/MyFiles/Work/Xamarin/Components/BindableRangeSlider/src/BindableDualHandleSlider/MdkStudio.Xamarin.Components.DualHandleSlider/BindableDualHandleSlider.cs" line="238" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.MdkStudio.Xamarin.Components.DualHandleSlider.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0A6E88C6-7C9E-42BB-8340-69D6837796D0" />

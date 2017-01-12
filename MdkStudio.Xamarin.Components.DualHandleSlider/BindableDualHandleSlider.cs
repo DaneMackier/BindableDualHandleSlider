@@ -230,12 +230,12 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
 
     private void OnRightValueChanged(float value)
     {
-      RightValue = (int)Math.Ceiling(value);
+      RightValue = (int)Math.Round(value, 0);
     }
 
     private void OnLeftValueChanged(float value)
     {
-      LeftValue = (int)Math.Ceiling(value);
+      LeftValue = (int)Math.Round(value, 0);
     }
   }
 }
