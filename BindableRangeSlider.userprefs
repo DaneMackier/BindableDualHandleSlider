@@ -17,7 +17,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.BindableRangeSlider.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0A6E88C6-7C9E-42BB-8340-69D6837796D0" />
   <MonoDevelop.Ide.ItemProperties.MdkStudio.Xamarin.Components.DualHandleSlider.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0A6E88C6-7C9E-42BB-8340-69D6837796D0" />
-  <MonoDevelop.Ide.ItemProperties.BindableRangeSlider.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.4_7_WXGA_API_23" />
 </Properties>
