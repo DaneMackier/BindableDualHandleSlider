@@ -147,14 +147,14 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
     public DualHandleSlider(Context context, IAttributeSet attributes) : base(context, attributes)
     {
       DualHandleSliderAttributeParser customRangeSliderAttributesParser = new DualHandleSliderAttributeParser(attributes, context);
+      HandleDrawableId = customRangeSliderAttributesParser.HandleDrawable;
 
       Initialize(
       customRangeSliderAttributesParser.MinValue,
       customRangeSliderAttributesParser.MaxValue,
       customRangeSliderAttributesParser.Step,
       customRangeSliderAttributesParser.LeftValue,
-      customRangeSliderAttributesParser.RightValue,
-      customRangeSliderAttributesParser.Title);
+      customRangeSliderAttributesParser.RightValue);
     }
 
     public DualHandleSlider(Context context,
@@ -162,10 +162,9 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
         float maxValue = 1f,
         float step = 0f,
         float leftValue = 0f,
-        float rightValue = 1f,
-        string title = "") : base(context)
+        float rightValue = 1f) : base(context)
     {
-      Initialize(minValue, maxValue, step, leftValue, rightValue, title);
+      Initialize(minValue, maxValue, step, leftValue, rightValue);
     }
 
     private void Initialize(
@@ -173,8 +172,7 @@ namespace MdkStudio.Xamarin.Components.DualHandleSlider.Droid
     float maxValue,
     float step,
     float leftValue,
-    float rightValue,
-    string title)
+    float rightValue)
     {
       HandleDrawableId = -1;
       InitDpiDependentParams();
